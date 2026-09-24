@@ -11,6 +11,7 @@ Característica: Agregar productos al carrito de compras
     Cuando selecciona la opcion "añadir al carrito"
     Entonces se visualizara el producto con la cantidad
 
+
   @RUN
   Escenario: Agregar 2 producto con 5 cantidades al carrito de compras
     Dado "Luis" ingresa el sitio web

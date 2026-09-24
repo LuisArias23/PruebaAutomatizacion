@@ -26,6 +26,7 @@ public class Hook {
         OnStage.theActorCalled(actor).attemptsTo(
                 OpenWeb.broserURL());
         waiting(TIME_SHORT);
+
         theActorInTheSpotlight().should(
                 GivenWhenThen.seeThat(
                         TheWebPage.title(),

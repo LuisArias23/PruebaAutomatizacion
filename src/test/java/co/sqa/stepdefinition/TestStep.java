@@ -42,6 +42,7 @@ public class TestStep {
         theActorInTheSpotlight().should(seeThat(ValidarTexto.witchParams(Finalizar)));
     }
 
+
     @And("selecciona dos producto e ingresa {int} cantidades")
     public void seleccionaDosProductoEIngresaCantidades(Integer int1) {
         OnStage.theActorCalled(Actor).attemptsTo(SeleccionarElementosTask.choose());
