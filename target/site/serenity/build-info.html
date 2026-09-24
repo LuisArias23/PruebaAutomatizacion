@@ -123,7 +123,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-05-2025 15:22:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 13-11-2025 22:08:33</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -139,8 +139,12 @@
                         <td>firefox</td>
                     </tr>
                     <tr>
+                        <td style="width: 30%">Driver chrome</td>
+                        <td>{goog:chromeOptions={args=[], extensions=[]}, acceptInsecureCerts=false, browserName=chrome, goog:chromeOption={args=[start-maximized, remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, disable-popup-blocking, disable-default-apps, disable-extensions-file-access-check, incognito, disable-infobars, disable-gpu]}}</td>
+                    </tr>
+                    <tr>
                         <td style="width: 30%">Driver edge</td>
-                        <td>{acceptInsecureCerts=false, browserName=MicrosoftEdge, ms:edgeOptions={args=[start-maximized, test-type, ignore-certificate-errors, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*], extensions=[]}}</td>
+                        <td>{acceptInsecureCerts=false, browserName=MicrosoftEdge, ms:edgeOptions={args=[start-maximized, test-type, ignore-certificate-errors, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, --headless, --headless], extensions=[]}}</td>
                     </tr>
                     <tr>
                         <td style="width: 30%">Operating System</td>
@@ -148,6 +152,21 @@
                     </tr>
                 </table>
 
+                    <h2>Driver capabilities: chrome</h2>
+                    <table class="table table-striped build-info">
+                            <tr>
+                                <td style="width: 30%">goog:chromeOptions</td><td>{args=[], extensions=[]}</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">acceptInsecureCerts</td><td>false</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">browserName</td><td>chrome</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">goog:chromeOption</td><td>{args=[start-maximized, remote-allow-origins=*, test-type, no-sandbox, ignore-certificate-errors, disable-popup-blocking, disable-default-apps, disable-extensions-file-access-check, incognito, disable-infobars, disable-gpu]}</td>
+                            </tr>
+                    </table>
                     <h2>Driver capabilities: edge</h2>
                     <table class="table table-striped build-info">
                             <tr>
@@ -157,7 +176,7 @@
                                 <td style="width: 30%">browserName</td><td>MicrosoftEdge</td>
                             </tr>
                             <tr>
-                                <td style="width: 30%">ms:edgeOptions</td><td>{args=[start-maximized, test-type, ignore-certificate-errors, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*], extensions=[]}</td>
+                                <td style="width: 30%">ms:edgeOptions</td><td>{args=[start-maximized, test-type, ignore-certificate-errors, incognito, disable-infobars, disable-gpu, disable-default-apps, disable-popup-blocking, remote-allow-origins=*, --headless, --headless], extensions=[]}</td>
                             </tr>
                     </table>
 
